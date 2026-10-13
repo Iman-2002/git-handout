@@ -1,6 +1,6 @@
 # git-handout
 
-Autor/innen: Iman Hage Hassan (7029051), 
+Autor/innen: Iman Hage Hassan (7029051), Andrea Maurer, Enes Hanefi
 
 Was ist Git und warum sollte es verwendet werden?
 
@@ -8,13 +8,17 @@ Git ist ein Versionsverwaltungssystem, das Änderungen am Quellcode speichert. D
 
 Grundlegende Git-Befehle (z. B. git init, git add, git commit, git push)
 
-git init - erstellt ein neues lokales Git-Repository
-git add .. - bereitet die Datei für den Commit vor
-git commit -m “...” - speichert die vorgemerkten Änderungen lokal
-git push - lädt die Commits zu Hub hoch. 
-git pull - holt Änderungen vom entfernten Repository und intergriert sie in den aktuellen Branch 
-git branch - zeigt deine Branches
-git log - zeigt die bisherigen Commits
-git rm … - entfernt eine Datei und merkt die Entfernung
-git mv … … - benennt eine Datei um oder verschiebt sie
+
+
+* git init - erstellt ein neues lokales Git-Repository
+* git add .. - bereitet die Datei für den Commit vor
+* git commit -m “...” - speichert die vorgemerkten Änderungen lokal
+* git push - lädt die Commits zu Hub hoch. 
+* git pull - holt Änderungen vom entfernten Repository und intergriert sie in den aktuellen Branch 
+* git branch - zeigt deine Branches
+* git log - zeigt die bisherigen Commits
+* git rm … - entfernt eine Datei und merkt die Entfernung
+* git mv … … - benennt eine Datei um oder verschiebt sie
 git status - zeigt, welche Dateien neu oder geändert sind
+* git --help - zeigt die allgemeine Hilfe zu Git an
+* man git - zeigt das Handbuch von Git an (etwas ausführlicher als Hilfe)
