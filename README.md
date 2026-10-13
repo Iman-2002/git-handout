@@ -16,9 +16,13 @@ Grundlegende Git-Befehle (z. B. git init, git add, git commit, git push)
 * git push - lädt die Commits zu Hub hoch. 
 * git pull - holt Änderungen vom entfernten Repository und intergriert sie in den aktuellen Branch 
 * git branch - zeigt deine Branches
+* git branch NameDesBranches - erstellt einen neuen Branch
 * git log - zeigt die bisherigen Commits
 * git rm … - entfernt eine Datei und merkt die Entfernung
 * git mv … … - benennt eine Datei um oder verschiebt sie
 git status - zeigt, welche Dateien neu oder geändert sind
 * git --help - zeigt die allgemeine Hilfe zu Git an
 * man git - zeigt das Handbuch von Git an (etwas ausführlicher als Hilfe)
+
+<h3>Branches</h3>
+Branches sind eigene Entwicklungszweige innerhalb eines Repositorys. Das ermöglicht Entwickelnden gleichzeitig am Code zu arbeiten, ohne den Code der anderen Entwickelnden zu verändern. Ist die Entwicklung abgeschlossen, wird der Branch zu Github gepusht. Andere Teammitglieder reviewen den Code und geben ihn ggf. frei, sodass ein Merge mit dem Code der anderen Entiwckelnden stattfinden kann. Dabei kann es zu Merge-Konflikten kommen. Dieser treten immer dann auf, wenn verschiedene Entwickelnde denselben Inhalt im Repo geändert haben, z. B. selbe Codezeile. In dem Fall löst man den Konflikt auf, indem man Github mitteilt, welche Variante übernommen werden soll.
