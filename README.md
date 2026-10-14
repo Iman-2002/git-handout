@@ -1,5 +1,7 @@
 # git-handout
 
+Gruppe 11
+
 Autor/innen: Iman Hage Hassan (7029051), Andrea Maurer, Enes Hanefi
 
 Was ist Git und warum sollte es verwendet werden?
