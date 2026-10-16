@@ -32,5 +32,13 @@ Bei modernen Entwicklungsumgebungen wie IntelliJ, PyCharm oder Visual Studio Cod
 Zudem kann man erst mal "für sich selbst" entwickeln, bevor den noch nicht fertigen Code schon alle anderen Projektbeteiligten online im Repo sehen. Mit einem Commit werden die Änderungen am Code in dieses lokale Repo geschrieben. Ist der Code bereit zum Review, wird er aus der Entwicklungsumgebung mit einem Push in das eigentliche Remote-Repository online hochgeladen, wo den Code alle relevanten Projektbeteiligten begutachten können und ggf. der Merge erfolgen kann.
 
 
-# Nützliche Git-Tools und Plabormen
+# Nützliche Git-Tools und Plattformen
+Um Git effektiv im Team zu nutzen und Projekte sicher zu speichern, gibt es verschiedene Plattformen und Hilfsprogramme:
 
+    Remote-Plattformen (Cloud-Dienste):
+
+        GitHub: Die weltweit bekannteste Plattform für Open-Source- und private Projekte. Sie bietet neben dem Hosting von Git-Repositories auch Funktionen wie Pull Requests, Issues zur Aufgabenverwaltung und Automatisierungen (GitHub Actions).
+
+        GitLab: Eine starke Alternative, die besonders in Unternehmen beliebt ist und viele integrierte Tools für den gesamten Softwareentwicklungs-Prozess bietet.
+
+        Bitbucket: Wird oft von Firmen genutzt, die auch andere Tools der Firma Atlassian (wie Jira oder Trello) verwenden.
