@@ -30,3 +30,25 @@ Branches sind eigene Entwicklungszweige innerhalb eines Repositorys. Das ermögl
 Bei modernen Entwicklungsumgebungen wie IntelliJ, PyCharm oder Visual Studio Code lassen sich Repositorys direkt in die IDE miteinbinden. Über die GUI oder Eingabe der Git-Kommandos auf einer integrierten Kommandozeile werden Repository-Aktionen direkt aus der IDE ausgeführt. Ein Pull, und der aktuelle Repo-Stand findet sich in der Entwicklungsumgebung auf dem eigenen Rechner. Dort besteht eine Kopie des Repos. So ist auch Entwicklung möglich, wenn man keine Internetverbindung hat.
 
 Zudem kann man erst mal "für sich selbst" entwickeln, bevor den noch nicht fertigen Code schon alle anderen Projektbeteiligten online im Repo sehen. Mit einem Commit werden die Änderungen am Code in dieses lokale Repo geschrieben. Ist der Code bereit zum Review, wird er aus der Entwicklungsumgebung mit einem Push in das eigentliche Remote-Repository online hochgeladen, wo den Code alle relevanten Projektbeteiligten begutachten können und ggf. der Merge erfolgen kann.
+
+
+# Nützliche Git-Tools und Plattformen
+Um Git effektiv im Team zu nutzen und Projekte sicher zu speichern, gibt es verschiedene Plattformen und Hilfsprogramme:
+
+Remote-Plattformen (Cloud-Dienste):
+
+    GitHub: Die weltweit bekannteste Plattform für Open-Source- und private Projekte. Sie bietet neben dem Hosting von Git-Repositories auch Funktionen wie Pull Requests, Issues zur Aufgabenverwaltung und Automatisierungen (GitHub Actions).
+
+    GitLab: Eine starke Alternative, die besonders in Unternehmen beliebt ist und viele integrierte Tools für den gesamten Softwareentwicklungs-Prozess bietet.
+
+    Bitbucket: Wird oft von Firmen genutzt, die auch andere Tools der Firma Atlassian (wie Jira oder Trello) verwenden.
+
+Grafische Git-Clients (GUIs):
+Wer Git-Befehle nicht immer in die Kommandozeile (Terminal) eintippen möchte, kann grafische Benutzeroberflächen nutzen:
+
+    GitHub Desktop: Sehr einsteigerfreundlich und übersichtlich für die wichtigsten Befehle.
+
+    Sourcetree oder GitKraken: Bieten detaillierte grafische Ansichten der Branches und der Projekt-Historie.
+
+IDE-Integrationen:
+Moderne Code-Editoren wie VS Code, IntelliJ oder PyCharm haben Git bereits fest integriert. Dadurch kann man direkt beim Programmieren Änderungen speichern (committen) und hochladen (pushen).
