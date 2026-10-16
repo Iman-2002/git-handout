@@ -35,10 +35,20 @@ Zudem kann man erst mal "für sich selbst" entwickeln, bevor den noch nicht fert
 # Nützliche Git-Tools und Plattformen
 Um Git effektiv im Team zu nutzen und Projekte sicher zu speichern, gibt es verschiedene Plattformen und Hilfsprogramme:
 
-    Remote-Plattformen (Cloud-Dienste):
+Remote-Plattformen (Cloud-Dienste):
 
-        GitHub: Die weltweit bekannteste Plattform für Open-Source- und private Projekte. Sie bietet neben dem Hosting von Git-Repositories auch Funktionen wie Pull Requests, Issues zur Aufgabenverwaltung und Automatisierungen (GitHub Actions).
+    GitHub: Die weltweit bekannteste Plattform für Open-Source- und private Projekte. Sie bietet neben dem Hosting von Git-Repositories auch Funktionen wie Pull Requests, Issues zur Aufgabenverwaltung und Automatisierungen (GitHub Actions).
 
-        GitLab: Eine starke Alternative, die besonders in Unternehmen beliebt ist und viele integrierte Tools für den gesamten Softwareentwicklungs-Prozess bietet.
+    GitLab: Eine starke Alternative, die besonders in Unternehmen beliebt ist und viele integrierte Tools für den gesamten Softwareentwicklungs-Prozess bietet.
 
-        Bitbucket: Wird oft von Firmen genutzt, die auch andere Tools der Firma Atlassian (wie Jira oder Trello) verwenden.
+    Bitbucket: Wird oft von Firmen genutzt, die auch andere Tools der Firma Atlassian (wie Jira oder Trello) verwenden.
+
+Grafische Git-Clients (GUIs):
+Wer Git-Befehle nicht immer in die Kommandozeile (Terminal) eintippen möchte, kann grafische Benutzeroberflächen nutzen:
+
+    GitHub Desktop: Sehr einsteigerfreundlich und übersichtlich für die wichtigsten Befehle.
+
+    Sourcetree oder GitKraken: Bieten detaillierte grafische Ansichten der Branches und der Projekt-Historie.
+
+IDE-Integrationen:
+Moderne Code-Editoren wie VS Code, IntelliJ oder PyCharm haben Git bereits fest integriert. Dadurch kann man direkt beim Programmieren Änderungen speichern (committen) und hochladen (pushen).
