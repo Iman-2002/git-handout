@@ -21,7 +21,7 @@ Git ist ein Versionsverwaltungssystem, das Änderungen am Quellcode speichert. D
 * `git mv <Ursprung> <Ziel>` - benennt eine Datei um oder verschiebt sie
 * `git status` - zeigt, welche Dateien neu oder geändert sind
 * `git --help` - zeigt die allgemeine Hilfe zu Git an
-* `git --help <Befehl>` - zeigt die Hilfe zu einem konkreten Befehl an
+* `git <Befehl> --help` - zeigt die Hilfe zu einem konkreten Befehl an
 
 # Branches
 Branches sind eigene Entwicklungszweige innerhalb eines Repositorys. Das ermöglicht Entwickelnden gleichzeitig am Code zu arbeiten, ohne den Code der anderen Entwickelnden zu verändern. Ist die Entwicklung abgeschlossen, wird der Branch zu Github gepusht. Andere Teammitglieder reviewen den Code und geben ihn ggf. frei, sodass ein Merge mit dem Code der anderen Entiwckelnden stattfinden kann. Dabei kann es zu Merge-Konflikten kommen. Diese treten immer dann auf, wenn verschiedene Entwickelnde denselben Inhalt im Repo geändert haben, z. B. selbe Codezeile. In dem Fall löst man den Konflikt auf, indem man Github mitteilt, welche Variante übernommen werden soll. Damit möglichst gar nicht so viele Konflikte entstehen (und um zu sehen wie der Code mittlerweile von anderen verändert wurde), sollte das aktuelle Repo aus dem Haupt-Branch regelmäßig in den eigenen Branch gepullt werden.
