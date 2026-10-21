@@ -3,25 +3,42 @@ name: test-my-app
 on:
   push:
     branches:
-      - main
+     # - main
+      - HelloWorld
+  pull_request:
+    branches:
+     # - main
+      - HelloWorld
+
+workflow_dispatch:
 
 jobs:
-  test:
-    runs-on: macOS-latest
+  build-android:
+    name: Build Android APK
+    runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v4
 
-      - uses: futureware-tech/simulator-action@v3
+      - name: Set up Flutter
+        uses: subosito/flutter-action@v2
         with:
-          model: 'iPhone 14'
+          flutter-version: 'stable'
 
-      - uses: subosito/flutter-action@v2
+      - name: Install dependencies
+        run: flutter pub get
+
+      - name: Analyze code
+        run: flutter analyze
+
+      - name: Run tests
+        run: flutter test
+
+      - name: Build APK
+        run: flutter build apk --release
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v3
         with:
-          channel: 'stable'
-
-      - run: flutter pub get
-      - run: flutter test integration_test
-# You can use flavors to run test, e.g. flutter test integration_test --dart-define=envFlavor=dev --flavor dev
-# Alternatively, if you're using a custom script to run tests, you can use:
-# - run: ./path/to/your/script.sh
+          name: android-apk
+          path: build/app/outputs/flutter-apk/app-release.apk
