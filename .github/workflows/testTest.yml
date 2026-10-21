@@ -28,6 +28,7 @@ jobs:
 
       - name: Install dependencies
         run: flutter pub get
+        working-directory: hello_flutter
 
       - name: Analyze code
         run: flutter analyze
