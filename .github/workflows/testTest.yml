@@ -11,6 +11,10 @@ on:
       - HelloWorld
   workflow_dispatch:
 
+  defaults:
+    run:
+      working-directory: hello_flutter
+
 jobs:
   build-android:
     name: Build Android APK
