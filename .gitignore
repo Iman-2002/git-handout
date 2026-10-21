@@ -11,3 +11,10 @@ build/
 
 # IntelliJ
 .idea/
+
+# Dart / Flutter
+.dart_tool/
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
