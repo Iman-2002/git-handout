@@ -7,7 +7,7 @@
 
 * klont das Repo
 * richtet Flutter und Abhängigkeiten ein
-* analysiert den Code mittels flutter analyze
+* analysiert den Code mittels flutter analyze (dabei ist code linting integriert)
 * testet mit flutter test
 * baut die apk mit flutter
 * lädt die App als Artefact-apk hoch

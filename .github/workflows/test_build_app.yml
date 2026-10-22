@@ -32,13 +32,18 @@ jobs:
 
       - name: Install dependencies
         run: flutter pub get
-        working-directory: hello_flutter
 
       - name: Analyze code
         run: flutter analyze
 
       - name: Run tests
-        run: flutter test
+        run: flutter test --coverage
+
+      - name: Code coverage report
+        uses: actions/upload-artifact@v7
+        with:
+          name: coverage-report
+          path: hello_flutter/coverage/lcov.info
 
     # Uncomment für building APK, warning this takes a while
       #- name: Build APK
