@@ -4,21 +4,21 @@ on:
   push:
     branches:
      #- main
-     # - HelloWorld
+     - HelloWorld
   pull_request:
     branches:
      # - main
-     # - HelloWorld
+     - HelloWorld
   workflow_dispatch:
-
-  defaults:
-    run:
-      working-directory: hello_flutter
 
 jobs:
   build-android:
     name: Build Android APK
     runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: hello_flutter
 
     steps:
       - name: Clone repository
@@ -40,11 +40,12 @@ jobs:
       - name: Run tests
         run: flutter test
 
-      - name: Build APK
-        run: flutter build apk --release
+    # Uncomment für building APK, warning this takes a while
+      #- name: Build APK
+      #  run: flutter build apk --release
 
-      - name: Upload artifact
-        uses: actions/upload-artifact@v7
-        with:
-          name: android-apk
-          path: hello_flutter/build/app/outputs/flutter-apk/app-release.apk
+      #- name: Upload artifact
+       # uses: actions/upload-artifact@v7
+       # with:
+        #  name: android-apk
+        #  path: hello_flutter/build/app/outputs/flutter-apk/app-release.apk
