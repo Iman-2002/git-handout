@@ -1,4 +1,7 @@
-[![.github/workflows/testTest.yml](https://github.com/Iman-2002/git-handout/actions/workflows/testTest.yml/badge.svg?branch=HelloWorld)](https://github.com/Iman-2002/git-handout/actions/workflows/testTest.yml)
+[![CI](https://github.com/Iman-2002/git-handout/actions/workflows/blank.yml/badge.svg)](https://github.com/Iman-2002/git-handout/actions/workflows/blank.yml)
+
+# git-handout
+*Autor/innen: Iman Hage Hassan (7029051), Andrea Maurer, Enes Hanefi*
 
 # Doku CI/CD
 *Autor/innen: Iman Hage Hassan, Andrea Maurer, Enes Hanefi*
