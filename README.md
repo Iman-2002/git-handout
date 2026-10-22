@@ -8,14 +8,14 @@
 * klont das Repo
 * richtet, Android APK, Flutter und Abhängigkeiten ein
 * analysiert den Code mittels flutter analyze (dabei ist code linting integriert)
-* testet mit flutter test mit code coverage
+* testet mit flutter test zwei Testanwendungen im Test-Ordner (code coverage inklusive)
 * Optional: baut die apk mit flutter
-* Optional: lädt die App als Artefact-apk hoch
+* Optional: lädt die App als Artefact-apk hoch --> derzeit auskommentiert, weil Bauen der App etwas Zeit in Anspruch nimmt.
 
 Zum Testen wurde mit Flutter ein Testprojekt erstellt und in den Branch HelloWorld hochgeladen.
 Aktuell wird die CI-Pipeline nur auf diesen Branch bei Push und Pull-Requests angewandt. Sie kann künftig auch auf main angewandt werden. Das ist derzeit auskommentiert. Hier ist im Team beim ersten richtig Projektcode noch abzusprechen, was genau getestet werden soll.
 
-Zusätzlich kann die CI-Pipeline manuell über den Actions-Tabs in GitHub angestartet werden.
+Zusätzlich kann die CI-Pipeline manuell über den Actions-Tabs in GitHub angestartet werden. Das wird durch die Codezeile/Option workflow_dispatch: in der Konfigurationsdatei für den CI-Workflow möglich.
 
 # künftige CD-Pipeline
 Evtl. soll die apk-Datei später automatisch im Repo zur Verfügung gestellt werden. Weitere Möglichkeiten fürs Deployment sind der Google Playstore sowie der Paketmanager für Flutter.
