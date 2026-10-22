@@ -11,6 +11,10 @@ on:
       - HelloWorld
   workflow_dispatch:
 
+  defaults:
+    run:
+      working-directory: hello_flutter
+
 jobs:
   build-android:
     name: Build Android APK
@@ -28,6 +32,7 @@ jobs:
 
       - name: Install dependencies
         run: flutter pub get
+        working-directory: hello_flutter
 
       - name: Analyze code
         run: flutter analyze
@@ -42,4 +47,4 @@ jobs:
         uses: actions/upload-artifact@v7
         with:
           name: android-apk
-          path: build/app/outputs/flutter-apk/app-release.apk
+          path: hello_flutter/build/app/outputs/flutter-apk/app-release.apk
