@@ -1,5 +1,8 @@
 [![CI](https://github.com/Iman-2002/git-handout/actions/workflows/blank.yml/badge.svg)](https://github.com/Iman-2002/git-handout/actions/workflows/blank.yml)
+--> Basis Test
 
+** App-CI-Pipeline mit Basis-Test-App in Branch HelloWorld, wird später auf main "ausgerollt" **
+ 
 # git-handout
 *Autor/innen: Iman Hage Hassan (7029051), Andrea Maurer, Enes Hanefi*
 
