@@ -1,4 +1,4 @@
-[![CI](https://github.com/Iman-2002/git-handout/actions/workflows/blank.yml/badge.svg)](https://github.com/Iman-2002/git-handout/actions/workflows/blank.yml)
+[![.github/workflows/test_build_app.yml](https://github.com/Iman-2002/git-handout/actions/workflows/test_build_app.yml/badge.svg)](https://github.com/Iman-2002/git-handout/actions/workflows/test_build_app.yml)
 
 # Doku CI/CD
 *Autor/innen: Iman Hage Hassan, Andrea Maurer, Enes Hanefi*
