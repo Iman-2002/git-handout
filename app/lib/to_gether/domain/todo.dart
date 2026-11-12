@@ -1,4 +1,4 @@
-import 'repeat_interval.dart';
+import '../repeat_interval.dart';
 
 class Todo {
   final String id;
