@@ -4,12 +4,10 @@ on:
   push:
     branches:
      - main
-     - HelloWorld
      - feature/todo-tests
   pull_request:
     branches:
      - main
-     - HelloWorld
      - feature/todo-tests
   workflow_dispatch:
 
@@ -20,7 +18,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: hello_flutter
+        working-directory: workdir_GitHubActions
 
     steps:
       - name: Clone repository
@@ -45,7 +43,7 @@ jobs:
         uses: actions/upload-artifact@v7
         with:
           name: coverage-report
-          path: hello_flutter/coverage/lcov.info
+          path: workdir_GitHubActions/coverage/lcov.info
 
     # Uncomment für building APK, warning this takes a while
       #- name: Build APK
