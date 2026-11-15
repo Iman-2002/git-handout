@@ -1,24 +1,27 @@
 import 'todo.dart';
+import 'todo_validation_error.dart';
 
 class TodoValidator {
-  static const int maxNameLength = 100;
-  static const int maxDescriptionLength = 5000;
+  static const maxNameLength = 100;
+  static const maxDescriptionLength = 5000;
 
-  static List<String> validate(Todo todo) {
-    final errors = <String>[];
+  static List<TodoValidationError> validate(
+  Todo todo,
+) {
+  final errors = <TodoValidationError>[];
 
     // Name
     if (todo.name.trim().isEmpty) {
-      errors.add('NAME_EMPTY');
+      errors.add(TodoValidationError.nameEmpty);
     }
 
     if (todo.name.length > maxNameLength) {
-      errors.add('NAME_TOO_LONG');
+      errors.add(TodoValidationError.nameTooLong);
     }
 
     // Beschreibung
-    if (todo.description.length > maxDescriptionLength) {
-      errors.add('DESCRIPTION_TOO_LONG');
+    if ((todo.description?.length ?? 0) > maxDescriptionLength) {
+      errors.add(TodoValidationError.descriptionTooLong);
     }
 
     // Fälligkeitsdatum
@@ -37,7 +40,7 @@ class TodoValidator {
     );
 
     if (normalizedDueDate.isBefore(normalizedToday)) {
-      errors.add('DUE_DATE_IN_PAST');
+      errors.add(TodoValidationError.dueDateInPast);
     }
 
     return errors;

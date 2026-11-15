@@ -1,9 +1,9 @@
-import '../repeat_interval.dart';
+import 'repeat_interval.dart';
 
 class Todo {
   final String id;
   final String name;
-  final String description;
+  final String? description;
   final DateTime dueDate;
   final RepeatInterval interval;
 
