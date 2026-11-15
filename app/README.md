@@ -1,3 +1,6 @@
+[![CI](https://github.com/Iman-2002/git-handout/actions/workflows/blank.yml/badge.svg)](https://github.com/Iman-2002/git-handout/actions/workflows/test_build_app.yml)
+--> Test-Suite, Build App
+
 # to_gether
 
 A new Flutter project.
