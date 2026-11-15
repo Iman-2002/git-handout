@@ -18,7 +18,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: workdir_GitHubActions
+        working-directory: app
 
     steps:
       - name: Clone repository
@@ -43,7 +43,7 @@ jobs:
         uses: actions/upload-artifact@v7
         with:
           name: coverage-report
-          path: workdir_GitHubActions/coverage/lcov.info
+          path: app/coverage/lcov.info
 
     # Uncomment für building APK, warning this takes a while
       #- name: Build APK
@@ -53,4 +53,4 @@ jobs:
        # uses: actions/upload-artifact@v7
        # with:
         #  name: android-apk
-        #  path: workdir_GitHubActions/build/app/outputs/flutter-apk/app-release.apk
+        #  path: app/build/app/outputs/flutter-apk/app-release.apk
