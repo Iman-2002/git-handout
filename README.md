@@ -1,7 +1,7 @@
 [![CI](https://github.com/Iman-2002/git-handout/actions/workflows/blank.yml/badge.svg)](https://github.com/Iman-2002/git-handout/actions/workflows/blank.yml)
 --> Basis Test
 
-[![CI](https://github.com/Iman-2002/git-handout/actions/workflows/blank.yml/badge.svg)](https://github.com/Iman-2002/git-handout/actions/workflows/test_build_app.yml)
+[![CI](https://github.com/Iman-2002/git-handout/actions/workflows/test_build_app.yml/badge.svg)](https://github.com/Iman-2002/git-handout/actions/workflows/test_build_app.yml)
 --> Test-Suite, Build App
  
 # git-handout
