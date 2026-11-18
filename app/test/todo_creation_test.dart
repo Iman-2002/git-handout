@@ -65,7 +65,7 @@ void main() {
     test('Name darf nicht nur Tabs enthalten', () {
       final todo = Todo(
           id: '1',
-          name: '/t/t/t',
+          name: '\t\t\t',
           description: 'Test',
           dueDate: DateTime.now().add(const Duration(days: 1)),
           interval: RepeatInterval.none,
@@ -76,10 +76,10 @@ void main() {
     );
     });
 
-    test('Name darf nicht nur neue Zeilen enthalten', () {
+    test('Name darf nicht nur Zeilen enthalten', () {
       final todo = Todo(
           id: '1',
-          name: '/n/n/n',
+          name: '\n\n\n',
           description: 'Test',
           dueDate: DateTime.now().add(const Duration(days: 1)),
           interval: RepeatInterval.none,
@@ -183,6 +183,7 @@ void main() {
       );
     });
 
+    // Gerade auch noch nicht sinnvoll, da IDs noch nicht automatisch vergeben werden
     test('ID wird automatisch vergeben', () {
       final todo = Todo(
         id: '1',
